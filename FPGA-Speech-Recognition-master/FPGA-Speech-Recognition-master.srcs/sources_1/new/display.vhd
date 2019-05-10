@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 07.05.2019 11:16:58
--- Design Name: 
--- Module Name: display - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -46,7 +26,6 @@ architecture Behavioral of display is
 
 begin
 
-
 clk_anodo: process(clk,reset_n)
 begin 
     if(reset_n = '1') then
@@ -73,7 +52,8 @@ begin
         cont <= "10";        
     when "11" =>
         anodo <= "11111110";         
-        cont <= "11";                        
+        cont <= "11";      
+    when others => anodo <= "11111111";                     
     end case;
 end process desloca_display;
 
@@ -83,7 +63,8 @@ begin
     when "00" => disp <= "0001001"; -- "n"     
     when "01" => disp <= "1100010"; -- "o" 
     when "10" => disp <= not "0001001"; -- "=" 
-    when "11" => disp <= result;                  
+    when "11" => disp <= result;     
+    when others => disp <= "1111111";             
     end case;
 end process;
 

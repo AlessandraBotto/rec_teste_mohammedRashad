@@ -17,24 +17,25 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.cache/wt [current_project]
-set_property parent.project_path C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.cache/wt [current_project]
+set_property parent.project_path C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.cache/ip [current_project]
+set_property ip_output_repo c:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/uart_parity.vhd
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/uart_tx.vhd
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/uart_rx.vhd
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/uart.vhd
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/display.vhd
-  C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/Voice_Recognition.vhd
+  C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd
+  C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd
+  C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd
+  C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd
+  C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/display.vhd
+  C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -44,8 +45,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/constrs_1/new/comp.xdc
-set_property used_in_implementation false [get_files C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/constrs_1/new/comp.xdc]
+read_xdc C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/constrs_1/new/comp.xdc
+set_property used_in_implementation false [get_files C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/constrs_1/new/comp.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

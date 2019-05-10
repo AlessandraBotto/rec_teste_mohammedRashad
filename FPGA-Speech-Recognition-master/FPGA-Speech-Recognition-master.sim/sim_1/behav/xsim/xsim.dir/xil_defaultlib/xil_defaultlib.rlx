@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.srcs/sources_1/new/display.vhd,1557432581,vhdl,,,,display,,,,,,,,
+C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd,1557420996,vhdl,,,,voice_recognition,,,,,,,,
+C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd,1557430441,vhdl,C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd,,,uart,,,,,,,,
+C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd,1521397818,vhdl,C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd;C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd,,,uart_parity,,,,,,,,
+C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd,1557430417,vhdl,C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd,,,uart_rx,,,,,,,,
+C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd,1557430428,vhdl,C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd,,,uart_tx,,,,,,,,

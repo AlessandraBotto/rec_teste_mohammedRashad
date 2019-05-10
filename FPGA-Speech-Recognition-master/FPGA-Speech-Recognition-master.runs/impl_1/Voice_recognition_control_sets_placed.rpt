@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue May  7 15:09:17 2019
-| Host         : AlessandraBotto running 64-bit major release  (build 9200)
+| Date         : Fri May 10 10:11:11 2019
+| Host         : conw705 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file Voice_recognition_control_sets_placed.rpt
 | Design       : Voice_recognition
 | Device       : xc7a100t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    10 |
-| Unused register locations in slices containing registers |    34 |
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |    36 |
 +----------------------------------------------------------+-------+
 
 
@@ -37,9 +37,10 @@ Table of Contents
 |      1 |            1 |
 |      2 |            1 |
 |      4 |            2 |
+|      6 |            1 |
 |      8 |            2 |
 |     11 |            1 |
-|    16+ |            3 |
+|    16+ |           21 |
 +--------+--------------+
 
 
@@ -50,30 +51,49 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               2 |            2 |
-| No           | No                    | Yes                    |              25 |            9 |
-| No           | Yes                   | No                     |              32 |           11 |
+| No           | No                    | Yes                    |              29 |            9 |
+| No           | Yes                   | No                     |              32 |            9 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              40 |            9 |
-| Yes          | Yes                   | No                     |              27 |           10 |
+| Yes          | No                    | Yes                    |             178 |           53 |
+| Yes          | Yes                   | No                     |              27 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------------------------+--------------------------------------+------------------+----------------+
-|  Clock Signal  |            Enable Signal           |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+----------------+------------------------------------+--------------------------------------+------------------+----------------+
-|  CLK_IBUF_BUFG |                                    | uart_i/uart_rx_i/FRAME_ERROR_i_1_n_0 |                1 |              1 |
-|  CLK_IBUF_BUFG |                                    |                                      |                2 |              2 |
-|  CLK_IBUF_BUFG | uart_i/uart_clk_en_reg_n_0         | uart_i/uart_rx_i/rx_ticks[3]_i_1_n_0 |                1 |              4 |
-|  CLK_IBUF_BUFG | uart_i/uart_clk_en_reg_n_0         | uart_i/uart_tx_i/tx_ticks[3]_i_1_n_0 |                1 |              4 |
-|  CLK_IBUF_BUFG | uart_i/uart_rx_i/DATA_VLD_reg_7[0] | uart_i/uart_tx_i/SR[0]               |                1 |              8 |
-|  CLK_IBUF_BUFG | uart_i/uart_tx_i/tx_data0          | uart_i/uart_tx_i/SR[0]               |                3 |              8 |
-|  CLK_IBUF_BUFG | uart_i/uart_rx_i/rx_bit_count0     | uart_i/uart_tx_i/SR[0]               |                5 |             11 |
-|  CLK_IBUF_BUFG |                                    | RST_N_IBUF                           |                5 |             20 |
-|  CLK_IBUF_BUFG | uart_i/uart_rx_i/DATA_VLD_reg_8    | uart_i/uart_tx_i/SR[0]               |                8 |             32 |
-|  CLK_IBUF_BUFG |                                    | uart_i/uart_tx_i/SR[0]               |               14 |             36 |
-+----------------+------------------------------------+--------------------------------------+------------------+----------------+
++----------------+---------------------------------+--------------------------------------+------------------+----------------+
+|  Clock Signal  |          Enable Signal          |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------+---------------------------------+--------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG |                                 | uart_i/uart_rx_i/FRAME_ERROR_i_1_n_0 |                1 |              1 |
+|  CLK_IBUF_BUFG |                                 |                                      |                2 |              2 |
+|  CLK_IBUF_BUFG | uart_i/uart_clk_en_reg_n_0      | uart_i/uart_rx_i/rx_ticks[3]_i_1_n_0 |                1 |              4 |
+|  CLK_IBUF_BUFG | uart_i/uart_clk_en_reg_n_0      | uart_i/uart_tx_i/tx_ticks[3]_i_1_n_0 |                1 |              4 |
+|  CLK_IBUF_BUFG | state                           | RST_N_IBUF                           |                3 |              6 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/E[0]           | RST_N_IBUF                           |                4 |              8 |
+|  CLK_IBUF_BUFG | uart_i/uart_tx_i/tx_data0       | RST_N_IBUF                           |                1 |              8 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/rx_bit_count0  | RST_N_IBUF                           |                3 |             11 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]   |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]_1 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]_2 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]_3 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]_4 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[8]_0 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[8]_1 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[8]_2 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[8]_3 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[9]   |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[9]_0 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[9]_1 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[9]_2 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[7]_0 |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[8]   |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index_reg[6]   |                                      |                5 |             18 |
+|  CLK_IBUF_BUFG | k                               | RST_N_IBUF                           |                8 |             32 |
+|  CLK_IBUF_BUFG | m                               | RST_N_IBUF                           |                8 |             32 |
+|  CLK_IBUF_BUFG | uart_i/uart_rx_i/index          | RST_N_IBUF                           |                8 |             32 |
+|  CLK_IBUF_BUFG |                                 | RST_N_IBUF                           |               17 |             60 |
+|  CLK_IBUF_BUFG | i                               | RST_N_IBUF                           |               22 |             68 |
++----------------+---------------------------------+--------------------------------------+------------------+----------------+
 
 
