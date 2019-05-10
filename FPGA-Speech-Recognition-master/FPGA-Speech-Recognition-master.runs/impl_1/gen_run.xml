@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557493830">
-  <File Type="BITSTR-BMM" Name="Voice_recognition_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Voice_recognition_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Voice_recognition_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Voice_recognition_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Voice_recognition.tcl"/>
-  <File Type="OPT-TIMING" Name="Voice_recognition_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Voice_recognition_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Voice_recognition_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="Voice_recognition_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Voice_recognition_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Voice_recognition_opt.dcp"/>
   <File Type="OPT-DRC" Name="Voice_recognition_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Voice_recognition.hwdef"/>
   <File Type="PWROPT-DCP" Name="Voice_recognition_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Voice_recognition_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Voice_recognition_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Voice_recognition_placed.dcp"/>
   <File Type="PLACE-IO" Name="Voice_recognition_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Voice_recognition_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Voice_recognition_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Voice_recognition_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Voice_recognition_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Voice_recognition_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Voice_recognition_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Voice_recognition.bgn"/>
-  <File Type="PLACE-TIMING" Name="Voice_recognition_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Voice_recognition_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Voice_recognition.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Voice_recognition_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Voice_recognition_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Voice_recognition_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Voice_recognition.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Voice_recognition_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Voice_recognition_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Voice_recognition_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Voice_recognition_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Voice_recognition_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Voice_recognition_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Voice_recognition.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Voice_recognition_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Voice_recognition.mmi"/>
+  <File Type="BITSTR-LTX" Name="Voice_recognition.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Voice_recognition_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Voice_recognition.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Voice_recognition_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Voice_recognition.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Voice_recognition_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Voice_recognition.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="Voice_recognition_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Voice_recognition_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Voice_recognition_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Voice_recognition_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Voice_recognition_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Voice_recognition_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Voice_recognition_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Voice_recognition_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Voice_recognition_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Voice_recognition_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Voice_recognition_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Voice_recognition_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Voice_recognition_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Voice_recognition_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Voice_recognition_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Voice_recognition_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Voice_recognition_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Voice_recognition_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Voice_recognition.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Voice_recognition_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Voice_recognition.rbt"/>
   <File Type="BITSTR-NKY" Name="Voice_recognition.nky"/>
   <File Type="BG-DRC" Name="Voice_recognition.drc"/>
@@ -71,25 +52,25 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -101,7 +82,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

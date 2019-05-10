@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557493744">
   <File Type="PA-TCL" Name="Voice_recognition.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Voice_recognition_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Voice_recognition_reports.tcl"/>
   <File Type="RDS-RDS" Name="Voice_recognition.vds"/>
   <File Type="RDS-UTIL" Name="Voice_recognition_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Voice_recognition_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Voice_recognition.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Voice_recognition_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Voice_recognition_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -41,7 +38,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd">
+    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
