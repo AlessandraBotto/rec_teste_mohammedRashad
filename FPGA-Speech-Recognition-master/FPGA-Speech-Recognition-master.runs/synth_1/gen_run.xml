@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557493744">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558033717">
   <File Type="PA-TCL" Name="Voice_recognition.tcl"/>
   <File Type="REPORTS-TCL" Name="Voice_recognition_reports.tcl"/>
   <File Type="RDS-RDS" Name="Voice_recognition.vds"/>
@@ -8,25 +8,25 @@
   <File Type="RDS-DCP" Name="Voice_recognition.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_parity.vhd">
+    <File Path="$PSRCDIR/sources_1/new/uart_parity.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_tx.vhd">
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart_rx.vhd">
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/uart.vhd">
+    <File Path="$PSRCDIR/sources_1/new/uart.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -38,7 +38,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd">
+    <File Path="$PSRCDIR/sources_1/new/Voice_Recognition.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

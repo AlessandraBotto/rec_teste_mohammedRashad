@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 10 11:17:33 2019
+# Process ID: 9672
+# Current directory: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6496 C:\Users\Alessandra\Desktop\git\rec_teste_mohammedRashad\FPGA-Speech-Recognition-master\FPGA-Speech-Recognition-master.xpr
+# Log file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/vivado.log
+# Journal file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 732.672 ; gain = 140.219
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 765.914 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B426A
+open_hw_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1697.051 ; gain = 931.137
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8B426A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B426A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri May 10 13:01:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri May 10 13:05:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri May 10 13:07:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 10 13:11:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri May 10 13:17:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri May 10 13:20:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May 10 13:24:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 13:48:27 2019...

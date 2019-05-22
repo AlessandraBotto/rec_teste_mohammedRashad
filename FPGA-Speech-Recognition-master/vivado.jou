@@ -2,14 +2,24 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri May 10 10:52:38 2019
-# Process ID: 1544
-# Current directory: C:/Users/acbotto/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10836 C:\Users\acbotto\Desktop\git\rec_teste_mohammedRashad\FPGA-Speech-Recognition-master\FPGA-Speech-Recognition-master.xpr
-# Log file: C:/Users/acbotto/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/vivado.log
-# Journal file: C:/Users/acbotto/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master\vivado.jou
+# Start of session at: Tue May 21 15:30:54 2019
+# Process ID: 1172
+# Current directory: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4828 C:\Users\Alessandra\Desktop\git\rec_teste_mohammedRashad\FPGA-Speech-Recognition-master\FPGA-Speech-Recognition-master.xpr
+# Log file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/vivado.log
+# Journal file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/acbotto/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr
+open_project C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr
 update_compile_order -fileset sources_1
-update_files -from_files C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd -to_files C:/Users/acbotto/Downloads/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master/VHDL/Voice_Recognition.vhd -filesets [get_filesets *]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1/Voice_recognition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

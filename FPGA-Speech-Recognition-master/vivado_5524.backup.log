@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 17 10:15:41 2019
+# Process ID: 5524
+# Current directory: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3800 C:\Users\Alessandra\Desktop\git\rec_teste_mohammedRashad\FPGA-Speech-Recognition-master\FPGA-Speech-Recognition-master.xpr
+# Log file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/vivado.log
+# Journal file: C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.oopen_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 706.434 ; gain = 127.500uupdate_compile_order -fileset sources_1eexit
+INFO: [Common 17-206] Exiting Vivado at Fri May 17 11:02:31 2019...

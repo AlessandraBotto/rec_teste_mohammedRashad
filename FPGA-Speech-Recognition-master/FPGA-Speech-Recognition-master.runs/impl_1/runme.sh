@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/acbotto/Desktop/FPGA/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1'
+HD_PWD='C:/Users/Alessandra/Desktop/git/rec_teste_mohammedRashad/FPGA-Speech-Recognition-master/FPGA-Speech-Recognition-master.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
